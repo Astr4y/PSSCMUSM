@@ -1,0 +1,100 @@
+.registration-page {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* Centers content horizontally */
+    justify-content: flex-start;  /* Aligns content to the top */
+    min-height: 100vh;
+    background-color: #ecf0f1;
+}
+
+.header {
+    background-color:  #0c065e;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 100%;  /* Ensure header uses full width */
+    height: auto;  /* Allow header height to adjust to content */
+    text-align: center;
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+}
+
+.registration-event-poster {
+    width: 100px;  /* Set a fixed width */
+    height: 50%;  /* Keep aspect ratio intact */
+    border-radius: 0;  /* Remove border-radius */
+    cursor: pointer;
+    box-shadow: none;  /* Remove shadow to avoid distortion */
+    transition: none;  /* Disable transition */
+}
+
+.registration-event-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);  /* Title color set to white */
+    margin-left: 20px;  /* Space between image and title */
+    text-align: left;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout by default */
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    width: 100%;
+    text-align: left;
+}
+
+input {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #0b7fcc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.register-btn {
+    grid-column: span 1;
+    margin-top: 20px;
+    background-color: #f39c12;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    justify-self: center; /* Aligns button at the bottom of the form */
+}
+
+.register-btn:hover {
+    background-color: #e67e22;
+}
+
+@media (min-width: 100px) {
+    form {
+        grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+    }
+
+    .register-btn {
+        grid-column: span 2; /* Makes the button span across both columns on larger screens */
+    }
+}

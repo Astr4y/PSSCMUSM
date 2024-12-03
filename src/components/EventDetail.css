@@ -1,0 +1,110 @@
+.event-detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 60%;
+    margin-right: 20px;
+  }
+  
+  .carousel-slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .event-info {
+    font-size: 1 rem;
+    color: #333;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-info h1 {
+    font-size: 1 rem;
+    margin-bottom: 15px;
+    color: #000000; /* Title in blue */
+    text-align: left;
+  }
+  
+  .event-info p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .event-info .highlight {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #000000;  /* For important sections like date, location, etc. */
+  }
+  
+  .event-info .highlight-date,
+  .event-info .highlight-location {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  
+  .register-btn {
+    padding: 15px 30px;
+    background-color: #ecff3e;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .register-btn:hover {
+    background-color: #022a54;
+  }
+  
+  /* Custom arrow buttons for carousel navigation */
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
+  .carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .carousel-arrow:focus {
+    outline: none;
+  }
+  
+  /* Slick carousel arrows */
+  .slick-prev, .slick-next {
+    color: #007bff; /* Custom arrow color */
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    color: #0056b3;
+  }
+  
